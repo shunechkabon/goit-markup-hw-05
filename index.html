@@ -530,6 +530,7 @@
             name="email"
             placeholder="E-mail"
           />
+
           <button class="footer-btn" type="submit">
             Subscribe
             <svg class="footer-btn-icon" width="24" height="24">
@@ -549,10 +550,15 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <label class="modal-label"
-            >Name<input class="modal-input" type="text" name="Name"
+            >Name
+            <svg class="modal-icon-name" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <input class="modal-input" type="text" name="Name"
           /></label>
           <label class="modal-label"
             >Phone<input class="modal-input" type="tel" name="Phone"
@@ -572,13 +578,23 @@
             >
             </textarea>
           </label>
+
           <div class="modal-terms">
-            <div class="modal-checkbox"></div>
+            <div class="modal-checkbox-container">
+              <input
+                class="modal-checkbox"
+                type="checkbox"
+                name="modal-terms"
+                value="terms"
+                required
+              />
+            </div>
             <p class="modal-terms-text">
               I accept the terms and conditions of the
               <a class="modal-terms-link" href="">Privacy Policy</a>
             </p>
           </div>
+
           <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
